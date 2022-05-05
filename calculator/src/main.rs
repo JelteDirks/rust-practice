@@ -19,6 +19,9 @@ fn calculate(first: f32, second: f32, operator: char) -> f32 {
         '-' => first - second,
         '*' => first * second,
         '/' => first / second,
-        _ => 0.0,
+        _ => {
+            println!("Invalid operator");
+            0.0
+        },
     }
 }
